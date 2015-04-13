@@ -1,0 +1,10 @@
+﻿@{
+    ViewBag.Title = "Result";
+    Layout = "/Views/Shared/_Layout.cshtml";
+    string path = (string)ViewData["FilePath"];
+}
+<p><h2>You sitemap is ready!</h2></p>
+<p><h3><a href="@path" download="sitemap.xml">Download</a> it </h3> </p>
+<form action="/">
+    <input type="submit" value="Go home">
+</form>
